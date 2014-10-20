@@ -19,7 +19,7 @@ interface using [wysihtml5](https://github.com/xing/wysihtml5).
 ```ruby
 # Gemfile
 
-gem 'activeadmin-wysihtml5', github: 'jbilbo/activeadmin-wysihtml5'
+gem 'activeadmin-wysihtml5', github: 'jbilbo/activeadmin-wysihtml5', branch: 'no-dragonfly'
 ```
 
 ## Usage

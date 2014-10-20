@@ -193,8 +193,6 @@ module Formtastic
           <div class="modal-content">
             <ul class="tabs">
               <li><a data-tab-handle="1" href="#modal-image-url">#{I18n.t("wysihtml5.dialog.image.url_title")}</a></li>
-              <li><a data-tab-handle="1" href="#modal-image-gallery">#{I18n.t("wysihtml5.dialog.image.gallery_title")}</a></li>
-              <li><a data-tab-handle="1" href="#modal-image-upload">#{I18n.t("wysihtml5.dialog.image.upload_title")}</a></li>
             </ul>
             <div data-tab="1" id="modal-image-url">
               <div class="input string">
@@ -216,43 +214,6 @@ module Formtastic
                   <option value="wysiwyg-float-left">#{I18n.t("wysihtml5.dialog.image.left")}</option>
                   <option value="wysiwyg-float-right">#{I18n.t("wysihtml5.dialog.image.right")}</option>
                 </select>
-              </div>
-            </div>
-            <div data-tab="1" id="modal-image-upload">
-              <div class="asset-uploader"></div>
-            </div>
-            <div data-tab="1" id="modal-image-gallery">
-              <div class="assets-container">
-                <ul></ul>
-              </div>
-              <div class="optional-inputs">
-                <div class="input string">
-                  <label>#{I18n.t("wysihtml5.dialog.image.alt")}</label>
-                  <input type="text" name="alt" />
-                </div>
-                <div class="input string">
-                  <label>#{I18n.t("wysihtml5.dialog.image.title")}</label>
-                  <input type="text" name="title" />
-                </div>
-                <div class="input radio">
-                  <div class="asset_scale_selection">
-                    <label>#{I18n.t("wysihtml5.dialog.image.scale")}</label>
-                    <form>
-                      <label class="option"><input value="full" type="radio" name="scale" checked="checked" /> 100%</label>
-                      <label class="option"><input value="three_quarters" type="radio" name="scale" /> 75%</label>
-                      <label class="option"><input value="half" type="radio" name="scale" /> 50%</label>
-                      <label class="option"><input value="one_quarter" type="radio" name="scale" /> 25%</label>
-                    </form>
-                  </div>
-                </div>
-                <div class="input select">
-                  <label>#{I18n.t("wysihtml5.dialog.image.alignment")}</label>
-                  <select name="alignment">
-                    <option value="">default</option>
-                    <option value="wysiwyg-float-left">#{I18n.t("wysihtml5.dialog.image.left")}</option>
-                    <option value="wysiwyg-float-right">#{I18n.t("wysihtml5.dialog.image.right")}</option>
-                  </select>
-                </div>
               </div>
             </div>
           </div>

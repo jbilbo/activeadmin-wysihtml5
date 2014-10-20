@@ -1,10 +1,15 @@
 # `activeadmin-wysihtml5`
 
+Note: This is a fork of (https://github.com/stefanoverna/activeadmin-wysihtml5) customized for my needs:
+* No dragonfly dependency (you cannot upload files, there's only "add external image" option)
+* Some minor changes/fixes:
+  * https://github.com/stefanoverna/activeadmin-wysihtml5/pull/39
+  * https://github.com/stefanoverna/activeadmin-wysihtml5/pull/38
+  * https://github.com/stefanoverna/activeadmin-wysihtml5/pull/35
+
 ![activeadmin-wysihtml5 screenshot](https://raw.github.com/stefanoverna/activeadmin-wysihtml5/master/screenshot.png)
 
 ![activeadmin-wysihtml5 screenshot](https://raw.github.com/stefanoverna/activeadmin-wysihtml5/master/link_screenshot.png)
-
-![activeadmin-wysihtml5 screenshot](https://raw.github.com/stefanoverna/activeadmin-wysihtml5/master/image_screenshot.png)
 
 This is a wysiyg html editor for the [Active Admin](http://activeadmin.info/)
 interface using [wysihtml5](https://github.com/xing/wysihtml5).
@@ -14,15 +19,7 @@ interface using [wysihtml5](https://github.com/xing/wysihtml5).
 ```ruby
 # Gemfile
 
-gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
-gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
-```
-
-Now install the migrations:
-
-```bash
-$ rake activeadmin_wysihtml5:install:migrations
-$ rake db:migrate
+gem 'activeadmin-wysihtml5', github: 'jbilbo/activeadmin-wysihtml5'
 ```
 
 ## Usage
